@@ -1,0 +1,364 @@
+/* Reset styles and default color */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Global styles */
+
+body {
+  line-height: 1.5;
+  color: white;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+span {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 250px;
+  height: 90px;
+  background-color: #1a1e1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Navbar styles */
+.blue-link:hover {
+  color: blue;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a:hover {
+  color: cyan;
+}
+
+/* Banner styles */
+.banner-card {
+  position: relative;
+  margin-top: 4rem;
+  background-color: #2b2b2b;
+}
+
+.banner-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 35%;
+  color: white;
+  left: 18%;
+}
+
+/* Info container styles */
+.info-container {
+  margin: auto;
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-container h4 {
+  line-height: 1.6;
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 1em 2em;
+  color: white;
+  font-size: 28px;
+}
+
+.info-container p {
+  padding: 2rem;
+  margin: 0 auto;
+  color: aqua;
+  text-decoration: none;
+}
+
+
+/* Card container styles */
+.card-container {
+  background-color: #161616;
+}
+
+.card-header {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-maincontainer {
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+}
+
+.card {
+  border: 1px white solid;
+  width: 300px;
+  height: 440px;
+  margin: 10px;
+}
+
+.card-image {
+  height: 150px;
+  background-color: aqua;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+/*unique classes for different photos */
+.photo-1 { background-image: url('/./images/courses/ios-development-img.webp'); }
+.photo-2 { background-image: url('/images/courses/react-img.jpg'); }
+.photo-3{background-image: url('/images/courses/phyton-img.jpg');}
+.photo-4{background-image: url('/images/courses/advanced-phyton-img.jpg');}
+.photo-5{background-image: url('/images/courses/cybersecurity-img.jpg');}
+.photo-6{background-image: url('/images/courses/speaker-img.jpg');}
+.photo-7{background-image: url('/images/courses/blockchain-img.jpg');}
+.photo-8{background-image: url('/images/courses/devops-img.jpg');}
+.photo-9{background-image: url('/images/courses/info-security-img.jpg');}
+
+.card span, .card p, .card a {
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Partners section styles */
+.partners {
+  background-color: rgb(43, 43, 43);
+  padding: 4rem 0;
+  position: relative;
+  height: 22rem;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  height: 100%;
+}
+
+.partners h3 {
+  font-size: 1.2rem;
+  margin-left: 8rem;
+}
+
+/* Slider styles */
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.slide3 { justify-content: center; }
+
+.slide2, .slide3 {
+  position: absolute;
+  top: 0;
+}
+
+.slide-img {
+  width: 15rem;
+}
+
+.slider_btn-right, .slider_btn-left {
+  background-color: #2f2f2f;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.slider_btn-right:hover, .slider_btn-left:hover {
+  color: #777;
+}
+
+.slider_btn-left {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+
+.slider_btn-right {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+
+.slider_btn-icon {
+  width: 2.8rem;
+}
+
+/* FAQ container styles */
+.faq-container {
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161616;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin: 2rem 0rem;
+}
+.title a{
+  margin-left: 2rem;
+  color: cyan;
+  text-decoration: none;
+}
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px white solid;
+  cursor: pointer;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions h3 {
+  font-size: 1.2rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.3s ease-in;
+}
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: rgb(26, 30, 31);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  padding-left: 10rem;
+}
+
+.footer-nav-link,
+.footer-nav-copyright {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  transition: all 0.4s;
+}
+
+.footer-nav-link:hover {
+  color: grey;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5rem;
+  padding-right: 10rem;
+}
+
+.socials-icon {
+  width: 100%;
+}
+
+.footer-socials-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-btn-main {
+  color: white;
+  background-color: rgb(0, 174, 243);
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.footer-btn-main:hover {
+  color: #555;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+@media screen and (max-width: 1400px) {
+  .info-container  a{
+    text-align: center;
+  }
+  .header{
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .slide-img{
+    max-width: 150px;
+    max-height: 70px;
+  }
+  .slider .prev, .slider .next{
+    font-size: 16px;
+  }
+}

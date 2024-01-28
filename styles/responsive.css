@@ -1,0 +1,27 @@
+@media screen and (max-width: 1400px) {
+    .info-container  a{
+      text-align: center;
+    }
+    .header{
+      padding: 3rem;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .slide-img{
+      max-width: 150px;
+      max-height: 70px;
+      margin-right: 60px;
+    }
+    .slider .prev, .slider .next{
+      font-size: 16px;
+    }
+    .partners {
+      display: flex;
+      justify-content: center;
+    }
+  } 
+  @media (max-width: 450px) {
+     .card{
+      width: 40px;
+     }
+  }

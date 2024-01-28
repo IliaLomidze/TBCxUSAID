@@ -1,0 +1,19 @@
+.partners {
+  background-color: rgb(43, 43, 43);
+  padding: 4rem 0;
+  position: relative;
+  height: 22rem;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  height: 100%;
+}
+
+.partners h3 {
+  font-size: 1.2rem;
+  margin-left: 8rem;
+}

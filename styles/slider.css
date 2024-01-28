@@ -1,0 +1,52 @@
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .slide3 { justify-content: center; }
+  
+  .slide2, .slide3 {
+    position: absolute;
+    top: 0;
+  }
+  
+  .slide-img {
+    width: 15rem;
+  }
+  
+  .slider_btn-right, .slider_btn-left {
+    background-color: #2f2f2f;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .slider_btn-right:hover, .slider_btn-left:hover {
+    color: #777;
+  }
+  
+  .slider_btn-left {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+  }
+  
+  .slider_btn-right {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+  }
+  
+  .slider_btn-icon {
+    width: 2.8rem;
+  }

@@ -1,0 +1,48 @@
+.card-container {
+    background-color: #161616;
+  }
+  
+  .card-header {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card-maincontainer {
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+  }
+  
+  .card {
+    border: 1px white solid;
+    width: 300px;
+    height: 440px;
+    margin: 10px;
+  }
+  
+  .card-image {
+    height: 150px;
+    background-color: aqua;
+    margin-bottom: 15px;
+    background-size: cover;
+  }
+  
+  /*unique classes for different photos */
+  .photo-1 { background-image: url('/./images/courses/ios-development-img.webp'); }
+  .photo-2 { background-image: url('/images/courses/react-img.jpg'); }
+  .photo-3{background-image: url('/images/courses/phyton-img.jpg');}
+  .photo-4{background-image: url('/images/courses/advanced-phyton-img.jpg');}
+  .photo-5{background-image: url('/images/courses/cybersecurity-img.jpg');}
+  .photo-6{background-image: url('/images/courses/speaker-img.jpg');}
+  .photo-7{background-image: url('/images/courses/blockchain-img.jpg');}
+  .photo-8{background-image: url('/images/courses/devops-img.jpg');}
+  .photo-9{background-image: url('/images/courses/info-security-img.jpg');}
+  
+  .card span, .card p, .card a {
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+  }
+  
